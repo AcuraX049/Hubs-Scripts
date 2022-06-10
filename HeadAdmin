@@ -34,6 +34,10 @@ Player.Chatted:connect(function(cht)
     elseif cht:match(";iy") then
         
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))();
+    elseif cht:match(";showbrook") then
+        
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AcuraX049/RawScripts.lua/main/ImPatrickTroll"))();
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))();
     elseif cht:match("/console") then
         
         print("----------------------Admin Script-------------------")
@@ -48,8 +52,10 @@ Player.Chatted:connect(function(cht)
         print("[+] ;dwarf (type in the chat ;tuto for tutorial)")
         print("[+] ;giant (type in the chat ;tuto for tutorial)")
         print("[+] ;bubblechat")
-        print("-----------------------Other Admin---------------------")
+        print("----------------------Other Admin---------------------")
         print("[+] ;iy (infinite yield)")
+        print("----------------------Trolls------------------------")
+        print("[+] ;showbrook (Brookhaven)")
         print("----------------------Creator--------------------------")
         print("[-] Creator: AcuraX049")
         print("[-] Youtube: AcuraX049 | The Coder")
