@@ -555,6 +555,15 @@ Settings:Button("Fix Lag V2 (Look Shitty But Effective)", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/K1ll3rN4m3/Scripts/main/Booster2"))()
 end)
 
+Settings:Button("Headless (IDK if FE)", function()
+    game.Players.LocalPlayer.Character.Head.Transparency = 1
+for i,v in pairs(game.Players.LocalPlayer.Character.Head:GetChildren()) do
+if (v:IsA("Decal")) then
+v:Destroy()
+end
+end
+end)
+
 --//SOCIAL
 
 Credits:Button("Copy YouTube", function()
