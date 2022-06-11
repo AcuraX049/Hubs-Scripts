@@ -10,6 +10,7 @@ local win = UILib:Window("Animation Changer V0.1",Color3.fromRGB(44, 120, 224), 
 
 local Anim = win:Tab("Animations")
 local Spec = win:Tab("Special Animations")
+local Bundle = win:Tab("Bundle Animations")
 local Settings = win:Tab("Settings")
 local Credits = win:Tab("Credits")
 
@@ -372,6 +373,28 @@ game.Players.LocalPlayer.Character.Humanoid.Jump = true
 end
 end)
 
+Anim:Toggle("Old School",false, function(value)
+    if value == false then
+        Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=2510196951"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=2510197257"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=2510202577"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=2510198475"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=2510197830"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=2510192778"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=2510195892"
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+else
+    local Animate = game.Players.LocalPlayer.Character.Animate
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=5319828216"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=5319831086"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=5319847204"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=5319844329"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=5319841935"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=5319816685"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=5319839762"
+end
+end)
+
 --//SPECIAL
 
 Spec:Toggle("Patrol",false, function(value)
@@ -526,6 +549,78 @@ Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=941008832"
 Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=940996062"
 Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=941000007"
 game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end
+end)
+
+--//BUNDLE
+
+Bundle:Toggle("Ud'zal",false, function(value)
+    if value == false then
+        Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=2510196951"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=2510197257"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=2510202577"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=2510198475"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=2510197830"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=2510192778"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=2510195892"
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+else
+    local Animate = game.Players.LocalPlayer.Character.Animate
+Animate.idle.Animation1.AnimationId = "rbxassetid://3303162274"
+Animate.idle.Animation2.AnimationId = "rbxassetid://3303162549"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=3303162967"
+Animate.run.RunAnim.AnimationId = 
+"http://www.roblox.com/asset/?id=3236836670"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=845398858"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=742636889"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=5319839762"
+game.Players.LocalPlayer.Character.Humanoid.Jump = false
+end
+end)
+
+Bundle:Toggle("Mr.Toilet",false, function(value)
+    if value == false then
+        Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=2510196951"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=2510197257"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=2510202577"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=2510198475"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=2510197830"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=2510192778"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=2510195892"
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+else
+    local Animate = game.Players.LocalPlayer.Character.Animate
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=4417977954"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=4417978624"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=2510202577"
+Animate.run.RunAnim.AnimationId = 
+"http://www.roblox.com/asset/?id=4417979645"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1014411816"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=742636889"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=742637151"
+end
+end)
+
+Bundle:Toggle("Borock",false, function(value)
+    if value == false then
+        Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=2510196951"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=2510197257"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=2510202577"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=2510198475"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=2510197830"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=2510192778"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=2510195892"
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+else
+    local Animate = game.Players.LocalPlayer.Character.Animate
+Animate.idle.Animation1.AnimationId = "rbxassetid://3293641938"
+Animate.idle.Animation2.AnimationId = "rbxassetid://3293642554"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=2510202577"
+Animate.run.RunAnim.AnimationId = 
+"http://www.roblox.com/asset/?id=3236836670"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1014411816"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=742636889"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=742637151"
 end
 end)
 
