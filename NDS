@@ -1,0 +1,171 @@
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "SUCCESSFULLY LOADED";
+        Text = "Enjoy!";
+        Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+    Duration = 5;
+
+--//MAIN LIBRARY
+
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostDuckyy/Ui-Librarys/main/Playstation%20Ui%20Library/Source"))()
+
+--//MAIN WINDOW
+
+local win = library:CreateWindow('Natural Disaster UI','[NEW!]')
+
+--//HOME TAB
+
+local home = win:addPage('Home', 2, true, 6)
+home:addLabel('Natural Disaster UI', 'By AcuraX049')
+home:addLabel('Version 1.0.0', 'Beta')
+home:addButton('Copy Youtube Link', function()
+    setclipboard("https://youtube.com/channel/UCmHgRCKUMLsybdLNlc10dZg")
+end)
+home:addButton('Copy Tiktok Link', function()
+    setclipboard("https://vt.tiktok.com/ZSdvMS8Bk/")
+end)
+home:addLabel('Date Made', '6/18/2022')
+
+--//MISC
+
+local misc = win:addPage('Misc', 2, false, 6)
+misc:addButton('Disable Fall Damage', function()
+    game.Players.LocalPlayer.Character.FallDamageScript:Destroy()
+end)
+misc:addButton('Goto Lobby', function()
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-252, 196, 292)
+end)
+misc:addButton('Goto Game', function()
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-122, 49, 8)
+end)
+misc:addButton('Vote Next Map', function()
+    getgenv().trink545ets = true
+if getgenv().trink545ets then
+    TextLabel = game:GetService("Players").LocalPlayer.PlayerGui.MainGui.MapVotePage
+TextLabel.Visible = true
+wait(5)
+    TextLabel = game:GetService("Players").LocalPlayer.PlayerGui.MainGui.MapVotePage
+TextLabel.Visible = false
+end
+end)
+misc:addButton('Detect Disaster', function()
+    local Character = game:GetService("Players").LocalPlayer.Character
+local Tag = Character:FindFirstChild("SurvivalTag")
+if Tag then
+game:GetService("StarterGui"):SetCore("SendNotification",{     
+Title = "Disaster Detected",     
+Text =   "" .. Tag.Value,
+Button1 = "Ok", Duration = 20, })
+end
+local function Repeat(R)
+   R.ChildAdded:connect(
+       function(Find)
+           if Find.Name == "SurvivalTag" then
+game:GetService("StarterGui"):SetCore("SendNotification",{     
+Title = "Disaster Detected",     
+Text =   "".. Find.Value,
+Button1 = "Ok", Duration = 20, })
+           end
+       end
+   )
+end
+end)
+misc:addToggle('Balloon Mode', function(value)
+    if value then
+        workspace.Gravity = 60
+        else
+            workspace.Gravity = 200
+    end
+end)
+misc:addButton('Remove Map (Not FE)', function()
+    game.Workspace.Structure:Destroy()
+end)
+misc:addButton('Remove Screen Effect', function()
+    game.Workspace.WeatherMachine:Destroy()
+end)
+misc:addButton('Remove Fog', function()
+    while true do
+        wait()
+        game.Lighting.FogEnd = 1000000
+        wait()
+    end
+end)
+misc:addButton('Steal Anyone Balloon', function()
+    local function createNotif(title,text,icon,duration)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = title; 
+		Text = text;
+		Icon = icon; 
+		Duration = duration; 
+	})
+end
+ 
+if game.Workspace:FindFirstChild("GreenBalloon", true) then -- Check for stealable GreenBalloon 
+	balloonClone = game.Workspace:FindFirstChild("GreenBalloon", true):Clone() -- clone it 
+	balloonClone.Parent = game:GetService("Players").LocalPlayer.Backpack
+	createNotif("AcuraX","  balloon succesfully stolen!",nil,"5")
+else 
+	createNotif("AcuraX","  there is no balloons.",nil,"5")
+end
+end)
+misc:addButton('Anti Fling', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AcuraX049/RawScripts.lua/main/Anti%20Fling"))()
+end)
+
+--//AUTO FARM
+local autofarm = win:addPage('Auto Farm', 2, false, 6)
+autofarm:addToggle('AutoFarm Win', function(value)
+    if value then
+        getgenv().autofarm = true
+ 
+if getgenv().autofarm then
+task.spawn(function()
+while getgenv().autofarm do
+for I, V in pairs(game.Players:GetChildren()) do
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-238, 181, 296)
+wait(0.1)
+end
+end
+end)
+end
+else
+    getgenv().autofarm = false
+end
+end)
+
+--//SETTINGS
+
+local settings = win:addPage('Settings', 2, false, 6)
+
+settings:addButton('Rejoin', function()
+    local ts = game:GetService("TeleportService")
+
+local p = game:GetService("Players").LocalPlayer
+
+ 
+
+ts:Teleport(game.PlaceId, p)
+end)
+
+settings:addButton('TP To Smaller Server', function()
+    local Http = game:GetService("HttpService")
+local TPS = game:GetService("TeleportService")
+local Api = "https://games.roblox.com/v1/games/"
+
+local _place = game.PlaceId
+local _servers = Api.._place.."/servers/Public?sortOrder=Asc&limit=100"
+function ListServers(cursor)
+   local Raw = game:HttpGet(_servers .. ((cursor and "&cursor="..cursor) or ""))
+   return Http:JSONDecode(Raw)
+end
+
+local Server, Next; repeat
+   local Servers = ListServers(Next)
+   Server = Servers.data[1]
+   Next = Servers.nextPageCursor
+until Server
+
+TPS:TeleportToPlaceInstance(_place,Server.id,game.Players.LocalPlayer)
+end)
+settings:addButton('RTX', function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/9HQS7zjJ"))()
+end)
