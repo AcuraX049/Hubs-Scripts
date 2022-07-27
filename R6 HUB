@@ -1,0 +1,360 @@
+--//NOTIF
+
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Hats Instruction",
+    Text = "Type in the chat /console to view needed hats",
+    Icon = "rbxassetid://29819383",
+    Duration = 10,
+})
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Created By",
+    Text = "AcuraX",
+    Icon = "rbxassetid://29819383",
+    Duration = 10,
+})
+
+--//IMPORTANT
+
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/ZRsycS7Z"))()
+local Window = Library:Create()
+
+--//BUTTONS
+
+Window:CreateButton("FE Runner", function()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\103\97\47\107\65\73\71\111\97\108\117\47\114\97\119\39\41\44\116\114\117\101\41\41\40\41\10")()
+end)
+
+Window:CreateButton("FE Nebula Hang", function()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\103\97\47\78\52\83\73\84\122\115\88\47\114\97\119\39\41\44\116\114\117\101\41\41\40\41\10")()
+end)
+
+Window:CreateButton("FE Slasher Man", function()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\103\97\47\103\77\72\100\102\81\57\108\47\114\97\119\39\41\44\116\114\117\101\41\41\40\41\10")()
+end)
+
+Window:CreateButton("FE Long Arm", function()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\103\97\47\83\110\67\75\122\80\101\104\47\114\97\119\39\41\44\116\114\117\101\41\41\40\41\10")()
+end)
+
+Window:CreateButton("FE Death", function()
+    loadstring("\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\40\34\83\116\97\114\116\101\114\71\117\105\34\41\58\83\101\116\67\111\114\101\40\34\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110\34\44\32\123\32\10\9\84\105\116\108\101\32\61\32\34\77\97\100\101\32\66\121\32\80\97\116\114\105\99\107\107\35\56\51\48\53\34\59\10\9\84\101\120\116\32\61\32\34\34\59\10\9\73\99\111\110\32\61\32\34\34\125\41\10\68\117\114\97\116\105\111\110\32\61\32\49\54\59\10\10\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\103\97\47\56\78\97\78\65\75\69\85\47\114\97\119\39\41\44\116\114\117\101\41\41\40\41\10")()
+end)
+
+Window:CreateButton("FE Fake Skeds VR", function()
+    loadstring("\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\40\34\83\116\97\114\116\101\114\71\117\105\34\41\58\83\101\116\67\111\114\101\40\34\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110\34\44\32\123\32\10\9\84\105\116\108\101\32\61\32\34\77\97\100\101\32\66\121\32\73\109\32\80\97\116\114\105\99\107\34\59\10\9\84\101\120\116\32\61\32\34\34\59\10\9\73\99\111\110\32\61\32\34\34\125\41\10\68\117\114\97\116\105\111\110\32\61\32\49\54\59\10\10\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\103\97\47\113\55\71\73\89\48\98\79\47\114\97\119\39\41\44\116\114\117\101\41\41\40\41\10")()
+end)
+
+Window:CreateButton("FE Fire Gun", function()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\103\97\47\119\88\85\73\114\71\88\69\47\114\97\119\39\41\44\116\114\117\101\41\41\40\41\10")()
+end)
+
+Window:CreateButton("FE Abyss Eye", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/cLFL1Xtp"))()
+end)
+
+Window:CreateButton("FE Hacker Sword", function()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\103\97\47\50\97\101\114\111\111\56\80\47\114\97\119\39\41\44\116\114\117\101\41\41\40\41\10")()
+end)
+
+Window:CreateButton("FE Depression", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/UXP3Ap79",true))()
+end)
+
+Window:CreateButton("FE Studio Dummy V2", function()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\103\97\47\50\114\98\111\88\110\97\104\47\114\97\119\39\41\44\116\114\117\101\41\41\40\41\10")()
+end)
+
+Window:CreateButton("FE Studio Dummy", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/QRZRLC7N",true))()
+end)
+
+Window:CreateButton("FE Injustice", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AcuraX049/RawScripts.lua/main/Injustice%20R6"))()
+end)
+
+Window:CreateButton("FE Mr Eating", function()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\103\97\47\103\86\56\87\50\73\118\50\47\114\97\119\39\41\44\116\114\117\101\41\41\40\41\10")()
+end)
+
+Window:CreateButton("FE Gunner", function()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\103\97\47\55\118\69\115\108\110\55\120\47\114\97\119\39\41\44\116\114\117\101\41\41\40\41\10")()
+end)
+
+Window:CreateButton("FE Mr Sleepy", function()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\103\97\47\102\103\74\105\55\105\101\55\47\114\97\119\39\41\44\116\114\117\101\41\41\40\41\10")()
+end)
+
+Window:CreateButton("FE Psycopath Slasher", function()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\103\97\47\111\79\112\72\66\116\89\89\47\114\97\119\39\41\44\116\114\117\101\41\41\40\41\10")()
+end)
+
+Window:CreateButton("FE Sin Dragon", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AcuraX049/RawScripts.lua/main/Sin%20Dragon"))()
+end)
+
+Window:CreateButton("FE Xester", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AcuraX049/RawScripts.lua/main/FE%20Xester"))()
+end)
+
+Window:CreateButton("FE Ravager", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AcuraX049/RawScripts.lua/main/Ravager"))()
+end)
+
+Window:CreateButton("FE John Doe", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AcuraX049/RawScripts.lua/main/John%20Doe"))()
+end)
+
+Window:CreateButton("FE Green Shield Power", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AcuraX049/RawScripts.lua/main/Green%20Shield%20Power"))()
+end)
+
+Window:CreateButton("FE Sun Power", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AcuraX049/RawScripts.lua/main/FE%20Sun%20Power"))()
+end)
+
+Window:CreateButton("FE Critical Mass", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AcuraX049/RawScripts.lua/main/Critical%20Mass"))()
+end)
+
+Window:CreateButton("FE Pandora", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AcuraX049/RawScripts.lua/main/Pandora"))()
+end)
+
+Window:CreateButton("FE The Angel", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AcuraX049/RawScripts.lua/main/The%20Angel"))()
+end)
+
+Window:CreateButton("FE Neptunian", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Jason20902/NEPTUNIAN-V-FIX/main/NEP-V-FIX'),true))()
+end)
+
+Window:CreateButton("FE Dominus Phaedra", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AcuraX049/RawScripts.lua/main/Dominus%20Phaedra"))()
+end)
+
+Window:CreateButton("FE Eiffel Tower", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/PYXDYT/FE-TOWER/main/V1"))()
+end)
+
+Window:CreateButton("FE Server Admin", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/AQAKj420"))()
+end)
+
+Window:CreateButton("Black Night", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AcuraX049/RawScripts.lua/main/Black%20Night"))()
+end)
+
+Window:CreateButton("Nightmare Sans", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/BLCfDK1S"))()
+end)
+
+Window:CreateButton("FE Relax Coffee", function()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\103\97\47\87\67\122\57\104\54\69\51\47\114\97\119\39\41\44\116\114\117\101\41\41\40\41\10")()
+end)
+
+print("PLEASE USE KEYBOARD SCRIPT\n")
+
+--//HATS NEEDED
+
+print("-----//Runner//-----")
+print("Doesnt Need Hats")
+print("---------------------\n\n")
+
+print("-----//Nebula Hang//-----")
+print("Hats Need: Nebula Blade, Pal Hair")
+print("Direct Links:")
+print("https://www.roblox.com/games/7541759836/unnamed")
+print("https://www.roblox.com/catalog/63690008/Pal-Hair")
+print("--------------------------\n\n")
+
+print("-----//Slasher Man//-----")
+print("Hats Need: Slasher")
+print("Direct Links:")
+print("https://www.roblox.com/games/7541759836/unnamed")
+print("-------------------------\n\n")
+
+print("-----//Long Arm//-----")
+print("Hats Need: Pal Hair, Red Roblox Cap")
+print("Direct Links:")
+print("https://www.roblox.com/catalog/63690008/Pal-Hair")
+print("https://www.roblox.com/catalog/48474313/Red-Roblox-Cap")
+print("----------------------\n\n")
+
+print("-----//Death//-----")
+print("Hats Need: Slasher")
+print("Direct Links:")
+print("https://www.roblox.com/games/7541759836/unnamed")
+print("-------------------\n\n")
+
+print("-----//Fake Skeds VR//-----")
+print("Hats Need: Pal Hair, Red Roblox Cap, Medieval Hood of Mystery")
+print("Direct Link:")
+print("https://www.roblox.com/catalog/617605556/Medieval-Hood-of-Mystery")
+print("https://www.roblox.com/catalog/48474313/Red-Roblox-Cap")
+print("https://www.roblox.com/catalog/63690008/Pal-Hair")
+print("---------------------------\n\n")
+
+print("-----//Fire Gun//-----")
+print("Hats Need: Pal Hair, Junkbot-Hat, Blue Flame Robo Samurai")
+print("Direct Link:")
+print("https://www.roblox.com/catalog/9560383533/Blue-Flame-Robo-Samurai")
+print("https://www.roblox.com/catalog/4381828509/Junkbot-Hat")
+print("https://www.roblox.com/catalog/63690008/Pal-Hair")
+print("----------------------\n\n")
+
+print("-----//Abyss Eye//-----")
+print("Hats Need: Slasher")
+print("Direct Link:")
+print("https://www.roblox.com/games/7541759836/unnamed")
+print("Effect Is Not FE The Animation Only")
+print("-----------------------\n\n")
+
+print("-----//Hacker Sword//-----")
+print("Hats Need: Pal Hair, Slasher, Blue Flame Robo Samurai")
+print("Direct Links:")
+print("https://www.roblox.com/catalog/9560383533/Blue-Flame-Robo-Samurai")
+print("https://www.roblox.com/catalog/63690008/Pal-Hair")
+print("https://www.roblox.com/games/7541759836/unnamed")
+print("--------------------------\n\n")
+
+print("-----//Depression//-----")
+print("Hats Need: Pal Hair")
+print("Direct Links:")
+print("https://www.roblox.com/catalog/63690008/Pal-Hair")
+print("-------------------------\n\n")
+
+print("-----//Studio Dummy V2//-----")
+print("Hats Need: Slasher")
+print("Direct Link:")
+print("https://www.roblox.com/games/7541759836/unnamed")
+print("-----------------------------\n\n")
+
+print("-----//Studio Dummy//-----")
+print("Hats Need: Dessert Plate Hat (Limited), Pal Hair")
+print("Direct Links:")
+print("https://www.roblox.com/catalog/8862923874/Dessert-Plate-Hat")
+print("https://www.roblox.com/catalog/63690008/Pal-Hair")
+print("--------------------------\n\n")
+
+print("-----//Injustice//-----")
+print("Doesnt Need Hat")
+print("Effect Not FE Animation Only")
+print("-----------------------\n\n")
+
+print("-----//Mr Eating//-----")
+print("Hats Need: Dessert Plate Hat (Limited), Pal Hair, Vector Arrow")
+print("Direct Links:")
+print("https://www.roblox.com/catalog/63690008/Pal-Hair")
+print("https://www.roblox.com/catalog/8862923874/Dessert-Plate-Hat")
+print("https://www.roblox.com/games/7541759836/unnamed")
+print("-----------------------\n\n")
+
+print("-----//Gunner//-----")
+print("Hats Need: Junkbot-Hat, Pal Hair")
+print("Direct Links:")
+print("https://www.roblox.com/catalog/4381828509/Junkbot-Hat")
+print("https://www.roblox.com/catalog/63690008/Pal-Hair")
+print("--------------------\n\n")
+
+print("-----//Mr Sleepy//-----")
+print("Hats Need: Pal Hair")
+print("Direct Links:")
+print("https://www.roblox.com/catalog/63690008/Pal-Hair")
+print("-----------------------\n\n")
+
+print("-----//Psycopath Slasher//-----")
+print("Hats Need: Pal Hair, Slasher")
+print("Direct Links:")
+print("https://www.roblox.com/catalog/63690008/Pal-Hair")
+print("https://www.roblox.com/games/7541759836/unnamed")
+print("-----------------------------\n\n")
+
+print("-----//Sin Dragon//-----")
+print("Doesnt Need Hats")
+print("Effect Not FE Animation Only")
+print("------------------------\n\n")
+
+print("-----//Xester//-----")
+print("Doesnt Need Hats")
+print("Effect Not FE Animation Only")
+print("--------------------\n\n")
+
+print("-----//Ravager//-----")
+print("Doesnt Need Hats")
+print("Effect Not FE Animation Only")
+print("---------------------\n\n")
+
+print("-----//John Doe//-----")
+print("Doesnt Need Hats")
+print("Effect Not FE Animation Only")
+print("----------------------\n\n")
+
+print("-----//Green Shield Power//-----")
+print("Doesnt Need Hats")
+print("Effect Not FE Animation Only")
+print("--------------------------------\n\n")
+
+print("-----//Sun Power//-----")
+print("Doesnt Need Hats")
+print("Effect Not FE Animation Only")
+print("-----------------------\n\n")
+
+print("-----//Critical Mass//-----")
+print("Doesnt Need Hats")
+print("Effect Not FE Animation Only")
+print("---------------------------\n\n")
+
+print("-----//Pandora//-----")
+print("Doesnt Need Hats")
+print("Effect Not FE Animation Only")
+print("--------------------\n\n")
+
+print("-----//The Angel//-----")
+print("Doesnt Need Hats")
+print("Effect Not FE Animation Only")
+print("-----------------------\n\n")
+
+print("-----//Neptunian//----")
+print("Doesnt Need Hats")
+print("Effect Not FE Animation Only")
+print("Press F to equip tool")
+print("-----------------------\n\n")
+
+print("-----//Dominus Phaedra//-----")
+print("Doesnt Need Hats")
+print("Effect Not FE Animation Only")
+print("-----------------------------\n\n")
+
+print("-----//Eiffel Tower//-----")
+print("Hats Need: Pal Hair, Fireworks in France Hat")
+print("Direct Links:")
+print("https://www.roblox.com/catalog/63690008/Pal-Hair")
+print("https://www.roblox.com/catalog/9375788266/Fireworks-in-France-Hat")
+print("--------------------------\n\n")
+
+print("-----//Server Admin//-----")
+print("Doesnt Need Hats")
+print("Effect Not FE Animation Only")
+print("Press M To Show Character")
+print("--------------------------\n\n")
+
+print("-----//Black Night//-----")
+print("Doesnt Need Hats")
+print("Not FE")
+print("-------------------------\n\n")
+
+print("-----//Nightmare Sans//-----")
+print("Doesnt Need Hats")
+print("Not FE")
+print("Z, X To Transform")
+print("----------------------------\n\n")
+
+print("-----//Relax Coffee//-----")
+print("Hats Need: Fireworks in France Hat")
+print("Direct Links:")
+print("https://www.roblox.com/catalog/9375788266/Fireworks-in-France-Hat")
+print("Keybinds: z x c")
+print("--------------------------")
