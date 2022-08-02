@@ -17,6 +17,7 @@ local MM2Tab = KoruGUI.newTab("MM2");
 local ClickerSimTab = KoruGUI.newTab("Clicker Simulator");
 local StrgstPunchTab = KoruGUI.newTab("Strongest Punch");
 local NinjaLegendsTab = KoruGUI.newTab("Ninja Legends");
+local SWFTab = KoruGUI.newTab("SWF");
 
 --//HOME
 MainTab.newDiv();
@@ -389,6 +390,28 @@ NinjaLegendsTab.newButton("Extreme Hub", function()
 end)
 
 NinjaLegendsTab.newDiv();
+
+--//SOUTHWEST FLORIDA
+SWFTab.newTitle("South West Florida");
+SWFTab.newDiv();
+
+SWFTab.newButton("ELTORO", function()
+    loadstring(game:HttpGet("https://cheatersoul.click/eltorohub.html"))();
+end)
+
+SWFTab.newButton("ACE Placer", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Luminential/releases/main/ac6_gui.luau", true))();
+end)
+
+SWFTab.newButton("AFK Money", function()
+    while(true)
+    do
+        wait(0)
+        game:GetService("ReplicatedStorage").AfkEvent:FireServer(true)
+    end
+end)
+
+SWFTab.newDiv();
 --//END SCRIPT
 KoruGUI.openTab(MainTab);
 --//NOTIF
