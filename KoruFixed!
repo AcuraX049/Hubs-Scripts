@@ -17,6 +17,9 @@ local MM2Tab = KoruGUI.newTab("MM2");
 local ClickerSimTab = KoruGUI.newTab("Clicker Simulator");
 local StrgstPunchTab = KoruGUI.newTab("Strongest Punch");
 local NinjaLegendsTab = KoruGUI.newTab("Ninja Legends");
+local MuscleLegendsTab = KoruGUI.newTab("Muscle Legends");
+local JailBreakTab = KoruGUI.newTab("Jailbreak");
+local LOSTab = KoruGUI.newTab("Legends Of Speed");
 
 --//HOME
 MainTab.newDiv();
@@ -109,6 +112,10 @@ PSXTab.newButton("B Genesis", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/raw-scriptpastebin/raw/main/B_Genesis'))();
 end)
 
+PSXTab.newButton("ManaHub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Mana42138/Manahub-Script-Hyper-804-was-here.lua/main/Hyper-is-still-here.lua"))();
+end)
+
 PSXTab.newDiv();
 --//BLOXFRUIT
 BLXFRUITTab.newDiv();
@@ -181,7 +188,6 @@ end)
 BLXFRUITTab.newDiv();
 
 --//BROOKHAVEN
-
 BRKHVNTab.newDiv();
 
 BRKHVNTab.newButton("IceHub", function()
@@ -360,6 +366,10 @@ StrgstPunchTab.newButton("Strongest Punch Auto Farm", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/baY2DSjD"))();
 end)
 
+StrgstPunchTab.newButton("ManaHub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Mana42138/Manahub-Script-Hyper-804-was-here.lua/main/Hyper-is-still-here.lua"))();
+end)
+
 StrgstPunchTab.newDiv();
 
 --//NINJA LEGENDS
@@ -388,7 +398,76 @@ NinjaLegendsTab.newButton("Extreme Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ExtremeAntonis/KeySystemUI/main/KeySystemUI-Obfuscated.lua"))();
 end)
 
+NinjaLegendsTab.newButton("ManaHub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Mana42138/Manahub-Script-Hyper-804-was-here.lua/main/Hyper-is-still-here.lua"))();
+end)
+
 NinjaLegendsTab.newDiv();
+
+--//MUSCLE LEGENDS
+MuscleLegendsTab.newDiv();
+
+MuscleLegendsTab.newButton("Muscle Legends", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/harisiskandar178/Roblox-Script/main/Muscle%20Legend"))();
+end)
+
+MuscleLegendsTab.newButton("Muscle Legends V2", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/Roblox-Shit/main/MuscleLegends.lua"))();
+end)
+
+MuscleLegendsTab.newButton("NoobSploit", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/noobhosting/noobscript/main/MuscleLegends.lua'))();
+end)
+
+MuscleLegendsTab.newDiv();
+--//JAILBREAK
+JailBreakTab.newDiv();
+
+JailBreakTab.newButton("DiamondHub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxiYT/Diamond/main/JailBreak"))();
+end)
+
+JailBreakTab.newButton("Evo V2", function()
+    loadstring(game:HttpGet("https://projectevo.xyz/script/loader.lua"))();
+end)
+
+JailBreakTab.newButton("Vynixius Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Jailbreak/Jailbreak"))();
+end)
+
+JailBreakTab.newButton("DarkHub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))();
+end)
+
+JailBreakTab.newButton("JailMonkey", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/JailMonkey.lua"))();
+end)
+
+JailBreakTab.newButton("Jailbreak", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxcriptidk1"))();
+end)
+
+JailBreakTab.newDiv();
+--//LEGENDS OF SPEED
+LOSTab.newDiv();
+
+LOSTab.newButton("IceHub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))();
+end)
+
+LOSTab.newButton("Uciha Hub", function()
+    loadstring(Game:HttpGet("https://pastebin.com/raw/QehXVy4m"))();
+end)
+
+LOSTab.newButton("ManaHub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Mana42138/Manahub-Script-Hyper-804-was-here.lua/main/Hyper-is-still-here.lua"))();
+end)
+
+LOSTab.newButton("V.G Hub", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))();
+end)
+
+LOSTab.newDiv();
 --//END SCRIPT
 KoruGUI.openTab(MainTab);
 --//NOTIF
