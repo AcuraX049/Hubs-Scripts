@@ -3,7 +3,7 @@ local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "Made By AcuraX",
-    Text = "type /console on chat or press f9 to view updates!",
+    Text = "type /console on chat to view latest update!",
     Icon = "rbxthumb://type=Asset&id=10540547957&w=150&h=150",
     Duration = 10,
 })
@@ -32,6 +32,7 @@ local MuscleLegendsTab = KoruGUI.newTab("Muscle Legends");
 local JailBreakTab = KoruGUI.newTab("Jailbreak");
 local LOSTab = KoruGUI.newTab("Legends Of Speed");
 local PhantomForcesTab = KoruGUI.newTab("Phantom Forces");
+local MiningSim2Tab = KoruGUI.newTab("Mining Sim 2");
 
 --//HOME
 MainTab.newDiv();
@@ -508,11 +509,35 @@ PhantomForcesTab.newButton("Solaris Hub V2", function()
 end)
 
 PhantomForcesTab.newDiv();
+--//MINING SIMULATOR 2
+MiningSim2Tab.newDiv();
+
+MiningSim2Tab.newButton("MS2 Rewrite", function()
+    loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/miningsim2/main/rewrite.lua')();
+end)
+
+MiningSim2Tab.newButton("Saza Software", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-DonateMe-3327"))()SZInjected(SZLoader)();
+end)
+
+MiningSim2Tab.newButton("Kelp", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/MaGiXxScripter/Cum-Hub/main/loader'))();
+end)
+
+MiningSim2Tab.newButton("Auto Farm Ticket", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/X5AXvQbB"))();
+end)
+
+MiningSim2Tab.newButton("Mining Sim2 OP GUI", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/zxrby/okoko/main/Protected%20(5).lua",true))();
+end)
+
+MiningSim2Tab.newDiv();
 --//END SCRIPT
 KoruGUI.openTab(MainTab);
 --//UPDATES
 
 print("---------------[[ UPDATES ]]---------------")
-print("[+] Added: Phantom Forces, Legends Of Speed")
+print("[+] Added: Mining Simulator 2")
 print("[-] Version: 0.0.1")
 print("-------------------------------------------")
