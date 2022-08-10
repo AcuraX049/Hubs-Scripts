@@ -3,7 +3,7 @@ local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "Made By AcuraX",
-    Text = "type /console on chat or press f9 to view latest update!",
+    Text = "type /console on chat or press f9 to view updates!",
     Icon = "rbxthumb://type=Asset&id=10540547957&w=150&h=150",
     Duration = 10,
 })
