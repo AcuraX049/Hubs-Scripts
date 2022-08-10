@@ -1,3 +1,14 @@
+--//NOTIF
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Made By AcuraX",
+    Text = "type /console on chat to view latest update!",
+    Icon = "rbxthumb://type=Asset&id=10540547957&w=150&h=150",
+    Duration = 10,
+})
+
+wait(2)
 --//MAIN LIBRARY
 
 local ezlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/debug420/Ez-Hub/master/Modules/EzLib.lua"))();
@@ -499,6 +510,9 @@ end)
 PhantomForcesTab.newDiv();
 --//END SCRIPT
 KoruGUI.openTab(MainTab);
---//NOTIF
-local notif = Notification.new("warning", "Created By", "AcuraX")
-notif:deleteTimeout(5)
+--//UPDATES
+
+print("---------------[[ UPDATES ]]---------------")
+print("[+] Added: Phantom Forces, Legends Of Speed")
+print("[-] Version: 0.0.1")
+print("-------------------------------------------")
