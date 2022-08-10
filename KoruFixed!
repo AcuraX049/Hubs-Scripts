@@ -20,6 +20,7 @@ local NinjaLegendsTab = KoruGUI.newTab("Ninja Legends");
 local MuscleLegendsTab = KoruGUI.newTab("Muscle Legends");
 local JailBreakTab = KoruGUI.newTab("Jailbreak");
 local LOSTab = KoruGUI.newTab("Legends Of Speed");
+local PhantomForcesTab = KoruGUI.newTab("Phantom Forces");
 
 --//HOME
 MainTab.newDiv();
@@ -447,6 +448,10 @@ JailBreakTab.newButton("Jailbreak", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxcriptidk1"))();
 end)
 
+JailBreakTab.newButton("Solaris Hub V2", function()
+    loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))();
+end)
+
 JailBreakTab.newDiv();
 --//LEGENDS OF SPEED
 LOSTab.newDiv();
@@ -468,6 +473,30 @@ LOSTab.newButton("V.G Hub", function()
 end)
 
 LOSTab.newDiv();
+--//PHANTOM FORCES
+PhantomForcesTab.newDiv();
+
+PhantomForcesTab.newButton("Strawhook", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/VoidMasterX/strawhook/main/script.lua", true))();
+end)
+
+PhantomForcesTab.newButton("Unfair Hub", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))();
+end)
+
+PhantomForcesTab.newButton("Aim Assistant", function()
+    loadstring(game:HttpGet'https://raw.githubusercontent.com/Paygammy/RBXAimAssistant/release/aim-assistant.lua')();
+end)
+
+PhantomForcesTab.newButton("DarkHub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))();
+end)
+
+PhantomForcesTab.newButton("Solaris Hub V2", function()
+    loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))();
+end)
+
+PhantomForcesTab.newDiv();
 --//END SCRIPT
 KoruGUI.openTab(MainTab);
 --//NOTIF
